@@ -25,3 +25,9 @@ pytest_cache/
 
 # Logs
 *.log
+
+# Data files
+data/
+
+# Report files
+reports/
