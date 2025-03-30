@@ -1,5 +1,5 @@
 from unittest.mock import patch
-from sales_pipeline.utils.upload_to_s3 import upload_to_s3
+from sales_pipeline.upload_to_s3 import upload_to_s3
 
 
 @patch("boto3.client")

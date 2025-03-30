@@ -3,7 +3,7 @@ import sys
 from sales_pipeline.ingest import ingest_csvs
 from sales_pipeline.process import process_data
 from sales_pipeline.analyze import generate_charts_and_report
-from sales_pipeline.utils.upload_to_s3 import upload_to_s3
+from sales_pipeline.upload_to_s3 import upload_to_s3
 from sales_pipeline.utils.envs import get_bool_env
 from sales_pipeline.utils.logger import get_logger
 from sales_pipeline.utils.cleanup import clean_generated_files
