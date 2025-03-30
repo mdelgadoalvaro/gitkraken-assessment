@@ -105,7 +105,7 @@ poetry run clean
 
 To run tests:
 ```bash
-poetry run test
+pytest
 ```
 
 ---
