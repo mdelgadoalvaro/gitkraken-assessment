@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "sales-pipeline"
+version = "0.1.0"
+description = ""
+authors = ["Álvaro Muñoz Delgado <mdelgadoalvaro@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.scripts]
+explore = "sales_pipeline.explore:explore_data"
+clean = "sales_pipeline.utils.cleanup:clean_generated_files"
+pipeline = "sales_pipeline.main:main"
+lint = "flake8.main.cli:main"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pandas = "^2.2.3"
+matplotlib = "^3.10.1"
+boto3 = "^1.37.23"
+pytest = "^8.3.5"
+
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^7.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
